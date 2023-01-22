@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #prints "Best School" 10-times using 'until-loop' 
 count = 0
-until [ $count == 10]
+until [ $count == 10];
 do 
 echo "Best School"
 ((count++))
