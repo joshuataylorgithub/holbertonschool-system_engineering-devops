@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+#Script that tells about the school file
+#Checks to see if school file exists
+#If file exists prints: school file exists
+#If file does not exist prints: school file does not exist
+#If the file is empty print: school file is empty
+#If the file is not empty print: school file is not empty
+#If the file is a regular file print: school is a regular file
+#If the file is not a regular file print nothing
+
+	file=school
+
+	if [ -e $file ];
+ 	  then 
+	echo "school file exists"
+	  else 
+	echo "school file does not exist"
+	  exit 1  
+	fi
+	
+	if [ ! -s $file ];
+	  then 
+	echo "school file is empty"
+   	  else 
+	echo "school file is not empty"
+	  fi
+  	
+	if [ -f $file ];
+          then
+  	echo "school is a regular file"
+	  fi	
